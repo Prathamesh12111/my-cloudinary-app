@@ -25,13 +25,12 @@ export default function FileUpload() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="mb-4">
+    <form onSubmit={handleSubmit}>
       <input
         type="file"
         onChange={(e) => setFile(e.target.files[0])}
-        className="mb-2"
       />
-      <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">
+      <button type="submit">
         Upload
       </button>
     </form>

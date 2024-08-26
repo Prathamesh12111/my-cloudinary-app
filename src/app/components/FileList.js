@@ -42,20 +42,19 @@ export default function FileList() {
 
   return (
     <div>
-      <h2 className="text-xl font-bold mb-4">Uploaded Files</h2>
-      <button onClick={refreshFiles} className="mb-4 px-4 py-2 bg-blue-500 text-white rounded">
+      <h2>Uploaded Files</h2>
+      <button onClick={refreshFiles}>
         Refresh Files
       </button>
       <ul>
         {files && files.length > 0 ? (
           files.map((file) => (
-            <li key={file.public_id} className="mb-2 flex items-center">
-              <a href={file.secure_url} target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-2">
+            <li key={file.public_id}>
+              <a href={file.secure_url} target="_blank" rel="noopener noreferrer">
                 {file.filename || file.public_id}
               </a>
               <button
                 onClick={() => downloadFile(file.secure_url, file.filename || `${file.public_id}.${file.format}`)}
-                className="px-2 py-1 bg-green-500 text-white rounded text-sm"
               >
                 Download
               </button>

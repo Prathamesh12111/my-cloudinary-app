@@ -231,3 +231,36 @@
     transform: rotate(0deg);
   }
 }
+
+.uploadContainer {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.fileInput {
+  display: block;
+  margin: 0 auto 10px auto;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.fileList {
+  margin-top: 20px;
+}
+
+.fileItem {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.fileItem button {
+  margin-left: 20px;
+}
+
+.refreshButton {
+  margin-bottom: 20px;
+}
